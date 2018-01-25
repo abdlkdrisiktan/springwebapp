@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
@@ -14,9 +15,9 @@
         <th>Publisher</th>
     </tr>
     <tr th:each="book : ${books}">
-        <td th:text="${book.id}">123</td>
-        <td th:text="${book.title}">Spring in Action</td>
-        <td th:text="${book.publisher.name}">Wrox</td>
+        <td th:text="${books.id}">123</td>
+        <td th:text="${books.title}">Spring in Action</td>
+        <td th:text="${books.publisher.name}">Wrox</td>
     </tr>
 </table>
 
